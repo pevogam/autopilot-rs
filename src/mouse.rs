@@ -432,6 +432,7 @@ mod tests {
         let scale = screen::scale();
         let mut rng = rng();
         for _ in 0..100 {
+            mouse::move_to(Point::new(0.0, 0.0)).expect("reset mouse::move_to call failed");
             let x: f64 = rng.random_range(0.0..size.width - 1.0);
             let y: f64 = rng.random_range(0.0..size.height - 1.0);
             let target = round_pt_nearest_hundredth(Point::new(x, y));
