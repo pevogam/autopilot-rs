@@ -19,7 +19,7 @@ use core_graphics::event_source::CGEventSourceStateID::HIDSystemState;
 #[cfg(target_os = "linux")]
 use crate::internal;
 
-use self::rand::Rng;
+use self::rand::RngExt;
 
 /// Device-independent modifier flags.
 #[derive(Copy, Clone, Debug, PartialEq)]

@@ -22,7 +22,7 @@ The following will move the mouse across the screen as a sine wave:
 ```rust
 extern crate autopilot;
 extern crate rand;
-use rand::Rng;
+use rand::RngExt;
 
 const TWO_PI: f64 = std::f64::consts::PI * 2.0;
 fn sine_mouse_wave() {

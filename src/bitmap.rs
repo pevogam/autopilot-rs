@@ -667,7 +667,7 @@ mod tests {
     use image::{DynamicImage, Rgba, RgbaImage};
     use image::{GenericImage, GenericImageView};
     use quickcheck::{Arbitrary, Gen, TestResult};
-    use rand::{rng, Rng};
+    use rand::{rng, RngExt};
 
     impl Arbitrary for Bitmap {
         fn arbitrary(g: &mut Gen) -> Bitmap {

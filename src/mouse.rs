@@ -377,7 +377,7 @@ unsafe extern "C" {
 mod tests {
     use crate::geometry::Point;
     use crate::mouse;
-    use rand::{rng, Rng};
+    use rand::{rng, RngExt};
     use crate::screen;
 
     #[test]

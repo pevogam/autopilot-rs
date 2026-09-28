@@ -1,6 +1,6 @@
 extern crate autopilot;
 extern crate rand;
-use rand::Rng;
+use rand::RngExt;
 
 const TWO_PI: f64 = std::f64::consts::PI * 2.0;
 fn sine_mouse_wave() -> Result<(), autopilot::mouse::MouseError> {
