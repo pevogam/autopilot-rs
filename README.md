@@ -13,6 +13,8 @@ on that repo.
 
 Currently supported on macOS, Windows, and X11 with the XTest extension.
 
+Builds use Rust 1.98.1, selected by `rust-toolchain.toml`.
+
 ## Examples
 
 The following will move the mouse across the screen as a sine wave:
